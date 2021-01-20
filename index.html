@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generates passwords based on user input">
+    <meta name="author" content="Ahmed Abbas">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="title">
+                <h1>Password Generator</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Generate a secure password</h1>
+            <p>Use our online password generator to instantly create a secure and random password.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="pw-container">
+                <button id="copy"><i class="fa fa-copy"></i></button>
+                <div class="pwoutput" id="pwoutput">
+                </div>
+                <div class="pw-body">
+                    <div class="form-control">
+                        <label for="length">Password length</label>
+                        <input id="length" type="number" min="6" max="25" placeholder="6">
+                    </div>
+                    <div class="form-control">
+                        <label for="upper">Uppercase</label>
+                        <input id="upper" type="checkbox">
+                    </div>
+                    <div class="form-control">
+                        <label for="lower">Lowercase</label>
+                        <input id="lower" type="checkbox">
+                    </div>
+                    <div class="form-control">
+                        <label for="number">Numbers</label>
+                        <input id="number" type="checkbox">
+                    </div>
+                    <div class="form-control">
+                        <label for="symbol">Symbols</label>
+                        <input id="symbol" type="checkbox">
+                    </div>
+                    <button class="generate" id="generate">
+                        Generate Password
+                    </button>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Ahmed Abbas, Copyright &copy; 2021</p>
+    </footer>
+
+</body>
+</html>

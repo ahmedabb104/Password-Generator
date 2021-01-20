@@ -1,0 +1,261 @@
+/* Global */
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background:rgb(23, 34, 24);
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header{
+    background:black;
+    color: white;
+    text-shadow: 2px 2px rgb(46, 99, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(46, 99, 48)  3px solid;
+}
+
+header #title h1{
+    margin: 0;
+    text-align: center;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 320px;
+    background:url(../img/binary.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#showcase h1{
+    margin-top: 75px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+#showcase p{
+    font-size: 18px;
+}
+
+/* pw */
+.pw-container{
+    background:rgb(46, 99, 48);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    width: 40%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+    padding: 10px;
+}
+
+.pwoutput{
+    background: rgb(70, 151, 73);
+    min-height: 46px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+
+.pw-container button{
+    background:rgb(23, 34, 24);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+.pw-container #copy{
+    font-size:26px;
+    padding: .5rem;
+    margin-left: 25rem;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.pw-container:hover #copy{
+    opacity: 1;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+
+.form-control #length{
+    text-align: center;
+}
+
+.generate{
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1125px) {
+    .pw-container #copy{
+        margin-left: 20rem;
+    }
+    .pwoutput{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .pw-container #copy{
+        margin-left: 18.75rem;
+        padding: .4rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .pw-container #copy{
+        margin-left: 17rem;
+        padding: .3rem;
+    }
+    .pwoutput{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .pw-container #copy{
+        margin-left: 15rem;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .pw-container #copy{
+        margin-left: 14rem;
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .pw-container #copy{
+        margin-top: 1.6rem;
+        margin-left: 12.5rem;
+        font-size: 18px;
+    }
+    .pwoutput{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .pw-container #copy{
+        margin-left: 11.5rem;
+        font-size: 18px;
+    }
+    .pwoutput{
+        padding-left: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pw-container #copy{
+        margin-left: 10rem;
+        font-size: 16px;
+    }
+    .pwoutput{
+        padding-left: none;
+        font-size: .65rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .pw-container #copy{
+        margin-left: 9.5rem;
+        font-size: 16px;
+    }
+    .pwoutput{
+        padding-left: none;
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pw-container{
+        font-size: 1rem;
+    }
+    .pw-container #copy{
+        margin-left: 8.5rem;
+        font-size: 16px;
+    }
+    .pwoutput{
+        padding-left: none;
+        font-size: .55rem;
+    }
+    .generate{
+        margin-top: 15px;
+        font-size: 1.2rem;
+        padding: 0.75rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .pw-container{
+        font-size: .85rem;
+        height: 50%;
+    }
+    .pw-container #copy{
+        margin-left: 7.5rem;
+        font-size: 16px;
+    }
+    .pwoutput{
+        padding-left: none;
+        font-size: .51rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .pw-container{
+        font-size: .8rem;
+        height: 50%;
+    }
+    .pw-container #copy{
+        margin-left: 6.5rem;
+        font-size: 16px;
+    }
+    .pwoutput{
+        padding-left: none;
+        font-size: .45rem;
+    }
+}
