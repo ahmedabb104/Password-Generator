@@ -35,7 +35,10 @@ function generatePassword() {
 
     for (let i = 0; i < pwlength; i++){
         const val = generateVal();
-        if (val == undefined){
+        if (pwlength > 25){
+            alert("Please enter a length less than 26.");
+            break;
+        }else if (val == undefined){
             continue;
         }else{
             password += val;
