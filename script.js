@@ -35,7 +35,11 @@ function generatePassword() {
 
     for (let i = 0; i < pwlength; i++){
         const val = generateVal();
-        password += val;
+        if (val == undefined){
+            continue;
+        }else{
+            password += val;
+        }
     }
 
     pwoutput.innerText = password;
