@@ -1,3 +1,8 @@
 # Password-Generator
-Password generator made with HTML, CSS, and vanilla JS
-https://ahmedspasswordgenerator.netlify.app/
+Generates a password based on user preferences  
+https://ahmedspasswordgenerator.netlify.app/  
+***
+### Technologies Used:
+- vanilla JavaScript
+- CSS
+- HTML
